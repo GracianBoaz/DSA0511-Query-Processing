@@ -1,0 +1,8 @@
+pivot_units = pd.pivot_table(
+    sales_df,
+    values="Units",
+    index="Item",
+    aggfunc="sum"
+)
+
+print(pivot_units)

@@ -1,0 +1,8 @@
+pivot_total = pd.pivot_table(
+    sales_df,
+    values="Sale_amt",
+    index=["Region", "Manager", "SalesMan"],
+    aggfunc="sum"
+)
+
+print(pivot_total)

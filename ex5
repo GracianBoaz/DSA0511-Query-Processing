@@ -1,0 +1,4 @@
+filtered["Volume"].plot(kind="bar", title="Alphabet Trading Volume")
+plt.xlabel("Date")
+plt.ylabel("Volume")
+plt.show()

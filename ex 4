@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load stock data
+df = pd.read_csv("alphabet_stock_data.csv", parse_dates=["Date"], index_col="Date")
+
+# Filter dates
+filtered = df.loc["2020-01-01":"2020-12-31"]
+
+# Line plot
+filtered["Close"].plot(title="Alphabet Stock Price (Line Plot)")
+plt.xlabel("Date")
+plt.ylabel("Closing Price")
+plt.show()

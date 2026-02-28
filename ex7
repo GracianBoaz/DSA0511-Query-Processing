@@ -1,0 +1,10 @@
+sales_df = pd.read_csv("sales_data.csv")
+
+pivot_max_min = pd.pivot_table(
+    sales_df,
+    values="Sale_amt",
+    index="Item",
+    aggfunc=["max", "min"]
+)
+
+print(pivot_max_min)
